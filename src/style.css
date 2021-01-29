@@ -88,7 +88,6 @@ html {
 }
 
 body {
-  font-family: "Noto Sans KR";
   font-size: 18px;
   color: var(--color-text);
 }
@@ -262,8 +261,8 @@ a:visited {
 .global-header {
   margin: 1rem 0;
   margin-left: -1rem;
-  font-family: var(--fontFamily-sans);
-  letter-spacing: -0.024em;
+  letter-spacing: -0.05em;
+  font-family: "Noto Sans KR";
 }
 
 .global-header a {
