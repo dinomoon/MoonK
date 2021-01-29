@@ -27,10 +27,9 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Montserrat, "Noto Sans KR", system-ui, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-serif);
@@ -89,7 +88,7 @@ html {
 }
 
 body {
-  font-family: var(--fontFamily-sans);
+  font-family: "Noto Sans KR";
   font-size: 18px;
   color: var(--color-text);
 }
@@ -353,7 +352,7 @@ a:visited {
 
 .bio-content a {
   font-size: 0.85rem;
-  padding: 8px;
+  padding: 4px 8px;
   background-color: var(--gray-3);
   text-decoration: none;
   border-radius: 4px;
