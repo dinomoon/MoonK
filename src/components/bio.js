@@ -14,7 +14,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50, quality: 95) {
+          fixed(width: 80, height: 80, quality: 95) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -35,7 +35,7 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
+  // const social = data.site.siteMetadata?.social
 
   const avatar = data?.avatar?.childImageSharp?.fixed
 
@@ -52,13 +52,36 @@ const Bio = () => {
         />
       )}
       {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
+        <div className="bio-content">
+          <p>
+            폴리매스가 되고 싶어요
+            {/* Written by <strong>{author.name}</strong> {author?.summary || null}
+          {` `} */}
+            {/* <a href={`https://twitter.com/${social?.twitter || ``}`}>
             You should follow them on Twitter
-          </a>
-        </p>
+          </a> */}
+          </p>
+          <ul className="link-items">
+            <li>
+              <a
+                href="https://github.com/dinomoon"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/dinomoon"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Youtube
+              </a>
+            </li>
+          </ul>
+        </div>
       )}
     </div>
   )
