@@ -41,9 +41,9 @@ const BlogIndex = ({ data, location }) => {
                   itemType="http://schema.org/Article"
                 >
                   <small>{post.frontmatter.date}</small>
-                  <h2>
+                  <h3>
                     <span itemProp="headline">{title}</span>
-                  </h2>
+                  </h3>
                 </article>
               </Link>
             </li>
