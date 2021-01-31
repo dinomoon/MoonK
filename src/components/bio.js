@@ -47,7 +47,7 @@ const Bio = () => {
           alt={author?.name || ``}
           className="bio-avatar"
           imgStyle={{
-            borderRadius: `50%`,
+            borderRadius: `100%`,
           }}
         />
       )}
@@ -65,15 +65,6 @@ const Bio = () => {
                 rel="noreferrer"
               >
                 GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/dinomoon"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Youtube
               </a>
             </li>
           </ul>

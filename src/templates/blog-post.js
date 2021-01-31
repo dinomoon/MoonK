@@ -38,26 +38,20 @@ const BlogPostTemplate = ({ data, location }) => {
         <Utterances />
       </div>
       <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+        <ul>
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                <span>←</span>
+                {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                <span>→</span>
+                {next.frontmatter.title}
               </Link>
             )}
           </li>
