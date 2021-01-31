@@ -305,11 +305,8 @@ a:visited {
   margin-bottom: var(--spacing-0);
 }
 
-.post-list-item h2 {
+.post-list-item h3 {
   font-size: var(--fontSize-2);
-  color: var(--gray-8);
-  margin-bottom: var(--spacing-0);
-  margin-top: var(--spacing-0);
 }
 
 .post-list-item small {
@@ -320,6 +317,7 @@ a:visited {
 .header-link-home {
   font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-2);
+  margin-bottom: 2rem;
 }
 
 /* bio */
@@ -349,7 +347,7 @@ a:visited {
 
 .bio-content a {
   font-size: 0.85rem;
-  padding: 4px 8px;
+  padding: 6px 8px;
   background-color: var(--gray-3);
   text-decoration: none;
   border-radius: 4px;
@@ -357,6 +355,10 @@ a:visited {
 
 .bio-content a:hover {
   background-color: var(--gray-4);
+}
+
+.bio-content .intro {
+  font-size: 1rem;
 }
 
 .bio .link-items {
@@ -391,12 +393,19 @@ a:visited {
 }
 
 .global-footer {
-  font-size: 14px;
+  display: flex;
+  justify-content: center;
 }
 
-.global-footer a {
-  color: var(--color-primary);
-  text-decoration: underline;
+.global-footer .footer-img {
+  width: 32px;
+  height: 32px;
+  margin: 0 1rem;
+}
+
+.comments h2 {
+  padding: 0 0 var(--spacing-3);
+  border-bottom: 3px solid var(--gray-2);
 }
 
 /* Media queries */
@@ -423,17 +432,21 @@ a:visited {
     font-size: calc(var(--fontSize-5) / 1.6);
   }
 
+  .post-list-item h3 {
+    font-size: var(--fontSize-1);
+  }
+
   .global-header {
     margin: 0.5rem 0 0.5rem -1rem;
   }
 
-  .global-footer {
-    font-size: 12px;
+  .bio-content .intro {
+    line-height: 1.4;
   }
 
-  .bio .bio-avatar {
-    width: 60px !important;
-    height: 60px !important;
+  .bio-content a {
+    padding: 0;
+    background-color: #fff;
   }
 
   .latest-articles {
@@ -443,5 +456,17 @@ a:visited {
 
   .global-wrapper[data-is-root-path="true"] .bio {
     margin-bottom: var(--spacing-10);
+  }
+
+  .header-link-home {
+    font-weight: var(--fontWeight-bold);
+    font-size: var(--fontSize-2);
+    margin-bottom: 1.5rem;
+  }
+
+  .global-footer .footer-img {
+    width: 28px;
+    height: 28px;
+    margin: 0 0.5rem;
   }
 }
