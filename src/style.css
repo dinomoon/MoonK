@@ -447,6 +447,11 @@ a:visited {
     font-size: 1rem;
   }
 
+  .gatsby-highlight {
+    margin-bottom: var(--spacing-6);
+    font-size: 14px;
+  }
+
   h1 {
     font-size: calc(var(--fontSize-6) / 1.6);
   }

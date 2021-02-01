@@ -1,7 +1,9 @@
 ---
-title: Stop Using console.log() in JavaScript(번역)
+title: "[번역] 자바스크립트에서 console.log()를 그만 사용하세요."
 date: "2021-02-01"
 ---
+
+원문: <u>https://medium.com/javascript-in-plain-english/stop-using-console-log-in-javascript-d29d6c24dc26</u>
 
 코드를 디버깅하기 위해 console.log()를 자주 사용하는 JavaScript 개발자이신가요? 그것이 잘못된 것은 아닙니다. 하지만, console 객체에는 다른 놀라운 메서드들이 있습니다. 이 글에서는 이런 메서드들에 대해 설명하려고 합니다.
 
