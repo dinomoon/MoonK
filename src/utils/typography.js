@@ -13,7 +13,7 @@ const typography = new Typography({
       styles: ["400", "700"],
     },
   ],
-  headerFontFamily: ["Noto Sans KR", "sans-serif"],
+  // headerFontFamily: ["Noto Sans KR", "sans-serif"],
   bodyFontFamily: ["Noto Serif KR", "serif"],
   headerWeight: 700,
   bodyWeight: 400,

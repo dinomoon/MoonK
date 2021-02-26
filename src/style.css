@@ -1,3 +1,5 @@
+@import url("https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css");
+
 /* CSS Custom Properties Definitions */
 
 :root {
@@ -90,6 +92,7 @@ html {
 body {
   font-size: 18px;
   color: var(--color-text);
+  font-family: "NanumSquareRound", sans-serif;
 }
 
 footer {
@@ -113,6 +116,7 @@ h5,
 h6 {
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
+  font-family: "NanumSquareRound", sans-serif;
 }
 
 h2,
